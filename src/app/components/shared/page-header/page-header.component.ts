@@ -12,6 +12,8 @@ import { ThemeService } from '../../../core/services/theme.service';
   styleUrls: ['./page-header.component.scss']
 })
 export class PageHeaderComponent {
+  isMobileMenuOpen = false;
+
   constructor(
     private router: Router,
     private location: Location,
@@ -31,5 +33,15 @@ export class PageHeaderComponent {
 
   toggleTheme(): void {
     this.themeService.toggleTheme();
+  }
+
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    document.body.style.overflow = this.isMobileMenuOpen ? 'hidden' : '';
+  }
+
+  closeMobileMenu(): void {
+    this.isMobileMenuOpen = false;
+    document.body.style.overflow = '';
   }
 }

@@ -14,13 +14,18 @@
         </button>
       </div>
       <div class="nav-right">
-        <div class="nav-links">
-          <a routerLink="/chi-sono" routerLinkActive="active">ABOUT</a>
-          <a routerLink="/esperienza" routerLinkActive="active">EXPERIENCE</a>
-          <a routerLink="/blog" routerLinkActive="active">BLOG</a>
+        <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div class="nav-links" [class.mobile-open]="isMobileMenuOpen">
+          <a routerLink="/chi-sono" routerLinkActive="active" (click)="closeMobileMenu()">ABOUT</a>
+          <a routerLink="/esperienza" routerLinkActive="active" (click)="closeMobileMenu()">EXPERIENCE</a>
+          <a routerLink="/blog" routerLinkActive="active" (click)="closeMobileMenu()">BLOG</a>
         </div>
         <button class="theme-toggle" (click)="toggleTheme()">
-          <span class="theme-icon">{{ (themeService.isDarkMode$ | async) ? '🌙' : '☀️' }}</span>
+          <span class="theme-icon">{{ (themeService.isDarkMode$ | async) ?   '☀️': '🌙' }}</span>
         </button>
       </div>
     </nav>
