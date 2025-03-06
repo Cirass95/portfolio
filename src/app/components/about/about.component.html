@@ -1,0 +1,40 @@
+<section id="about" class="section">
+  <div class="container">
+    <div class="number-indicator">01</div>
+    <h2 class="section-title" scrollColor>About Me</h2>
+    <div class="about-content">
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-icon">🎯</div>
+          <h3>Focus</h3>
+          <p>Specializzato nella creazione di applicazioni web moderne e responsive con Angular</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💡</div>
+          <h3>Approccio</h3>
+          <p>Combino competenze tecniche con capacità creative di problem-solving</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🚀</div>
+          <h3>Obiettivo</h3>
+          <p>Sviluppo di applicazioni scalabili e performanti che gli utenti amano</p>
+        </div>
+      </div>
+      <div class="about-text card">
+        <p class="lead">
+          Ciao! Sono uno sviluppatore Angular appassionato con 5 anni di esperienza nella creazione di applicazioni web moderne.
+        </p>
+        <p>
+          Mi specializzo nella costruzione di applicazioni scalabili e performanti utilizzando Angular e tecnologie correlate.
+          Il mio approccio combina competenza tecnica con una particolare attenzione all'esperienza utente.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight" *ngFor="let item of highlights">
+            <span class="highlight-number">{{item.value}}{{item.suffix}}</span>
+            <span class="highlight-text">{{item.text}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

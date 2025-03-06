@@ -1,0 +1,40 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-text">&lt; MC /&gt;</span>
+          <span class="logo-dot"></span>
+        </div>
+        <!-- <p class="brand-text">Creo esperienze web straordinarie con tecnologie moderne.</p> -->
+      </div>
+      
+      <div class="footer-links">
+        <h3>Link Rapidi</h3>
+        <nav>
+          <a href="#about">Chi Sono</a>
+          <a href="#experience">Esperienze</a>
+          <a href="#services">Servizi</a>
+          <a href="#contact">Contatti</a>
+        </nav>
+      </div>
+
+      <div class="footer-social">
+        <h3>Seguimi</h3>
+        <div class="social-links">
+          <a *ngFor="let link of socialLinks" 
+             [href]="link.url" 
+             class="social-link" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            {{link.name}}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">&copy; {{currentYear}} Michele Cirasola. Tutti i diritti riservati.</p>
+    </div>
+  </div>
+</footer>

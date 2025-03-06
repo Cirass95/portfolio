@@ -1,0 +1,24 @@
+<section id="contact" class="section">
+  <div class="container">
+    <div class="number-indicator">05</div>
+    <h2 class="section-title" scrollColor>Contact</h2>
+    
+    <div class="contact-grid">
+      <div class="info-card">
+        <div class="icon">📧</div>
+        <h3>Email</h3>
+        <p>{{contactInfo.email}}</p>
+        <a [href]="'mailto:' + contactInfo.email" class="btn-link">Invia Email</a>
+      </div>
+
+      <div class="info-card" *ngFor="let social of socialLinks">
+        <div class="icon">{{social.icon}}</div>
+        <h3>{{social.name}}</h3>
+        <p>{{social.description}}</p>
+        <a [href]="social.url" target="_blank" rel="noopener noreferrer" class="btn-link">
+          {{social.name === 'Posizione' ? 'Apri Maps' : 'Visita Profilo'}}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

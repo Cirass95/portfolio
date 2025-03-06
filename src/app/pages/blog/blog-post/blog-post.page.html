@@ -1,0 +1,48 @@
+<app-page-header></app-page-header>
+<main class="main-content" *ngIf="post">
+  <article class="blog-post">
+    <header class="post-header">
+      <div class="container">
+        <div class="post-meta">
+          <span class="category">{{post.category}}</span>
+          <span class="date">{{post.date}}</span>
+          <span class="read-time">{{post.readTime}} lettura</span>
+        </div>
+        <h1>{{post.title}}</h1>
+        <div class="author">
+          <span class="author-name">{{post.author}}</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="featured-image">
+      <img [src]="post.imageUrl" [alt]="post.title">
+    </div>
+
+    <div class="container">
+      <div class="post-content" [innerHTML]="post.content"></div>
+
+      <footer class="post-footer">
+        <div class="tags">
+          <span class="tag" *ngFor="let tag of post.tags">{{tag}}</span>
+        </div>
+        
+        <div class="share">
+          <h3>Condividi</h3>
+          <div class="share-buttons">
+            <a href="https://twitter.com/intent/tweet?text={{post.title}}" 
+               target="_blank" 
+               class="share-button twitter">
+              Twitter
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{post.title}}" 
+               target="_blank" 
+               class="share-button linkedin">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </article>
+</main>

@@ -1,0 +1,68 @@
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.company-card {
+  background: var(--card-bg);
+  transition: transform 0.3s ease;
+}
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-icon {
+  font-size: 2.5rem;
+}
+
+.company-period {
+  color: var(--accent-pink);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.company-name {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin: -10px 0 15px 0;
+  font-weight: 500;
+}
+
+h3 {
+  color: var(--primary-color);
+  margin: 0 0 15px;
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  background: rgba(0, 229, 255, 0.1);
+  color: var(--primary-color);
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .companies-grid {
+    grid-template-columns: 1fr;
+  }
+}

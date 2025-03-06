@@ -1,0 +1,87 @@
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.skills-category {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-item {
+  width: 100%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.skill-percentage {
+  color: var(--accent-pink);
+}
+
+.skill-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.badge {
+  background: var(--card-bg);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-pink);
+}
+
+@media (max-width: 768px) {
+  .skills-categories {
+    grid-template-columns: 1fr;
+  }
+}

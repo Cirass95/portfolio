@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a routerLink="/" class="logo">
+          <span class="logo-text">&lt; MC /&gt;</span>
+          <span class="logo-dot"></span>
+        </a>
+        <button *ngIf="!isHomePage()" 
+                class="back-button" 
+                (click)="goBack()">
+          <span class="back-icon">←</span>
+          <span class="back-text">Torna indietro</span>
+        </button>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a routerLink="/chi-sono" routerLinkActive="active">ABOUT</a>
+          <a routerLink="/esperienza" routerLinkActive="active">EXPERIENCE</a>
+          <a routerLink="/blog" routerLinkActive="active">BLOG</a>
+        </div>
+        <button class="theme-toggle" (click)="toggleTheme()">
+          <span class="theme-icon">{{ (themeService.isDarkMode$ | async) ? '🌙' : '☀️' }}</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

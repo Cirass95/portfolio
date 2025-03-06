@@ -1,0 +1,50 @@
+<section id="skills" class="section">
+  <div class="container">
+    <div class="number-indicator">02</div>
+    <h2 class="section-title" scrollColor>Skills</h2>
+    
+    <div class="skills-categories">
+      <div class="skills-category">
+        <h3>Frontend Development</h3>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of frontendSkills">
+            <div class="skill-info">
+              <span class="skill-name">{{skill.name}}</span>
+              <span class="skill-percentage">{{skill.level}}%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" 
+                   [style.width.%]="skill.level"
+                   [style.backgroundColor]="skill.color">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Backend & Tools</h3>
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of backendSkills">
+            <div class="skill-info">
+              <span class="skill-name">{{skill.name}}</span>
+              <span class="skill-percentage">{{skill.level}}%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" 
+                   [style.width.%]="skill.level"
+                   [style.backgroundColor]="skill.color">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-badges">
+      <div class="badge" *ngFor="let tech of technologies">
+        {{tech}}
+      </div>
+    </div>
+  </div>
+</section>

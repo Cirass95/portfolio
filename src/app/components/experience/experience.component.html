@@ -1,0 +1,22 @@
+<section id="experience" class="section">
+  <div class="container">
+    <div class="number-indicator">03</div>
+    <h2 class="section-title" scrollColor>Experience</h2>
+    <div class="companies-grid">
+      <div class="company-card card" *ngFor="let exp of experiences">
+        <div class="company-content">
+          <div class="company-header">
+            <div class="company-icon">🏢</div>
+            <div class="company-period">{{exp.period}}</div>
+          </div>
+          <h3>{{exp.title}}</h3>
+          <h4 class="company-name">{{exp.company}}</h4>
+          <p>{{exp.description}}</p>
+          <div class="tech-stack">
+            <span class="tech-tag" *ngFor="let tech of exp.technologies">{{tech}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

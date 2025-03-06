@@ -1,0 +1,40 @@
+<app-page-header></app-page-header>
+<main class="main-content">
+  <section class="hero-section">
+    <div class="container">
+      <h1>Chi Sono</h1>
+      <p class="lead">
+        Il mio percorso nel mondo dello sviluppo web, dalla formazione accademica 
+        alle competenze tecniche acquisite.
+      </p>
+    </div>
+  </section>
+
+  <section class="education-section section">
+    <div class="container">
+      <h2>Formazione</h2>
+      <div class="education-grid">
+        <div class="education-card" *ngFor="let edu of education">
+          <div class="period">{{edu.period}}</div>
+          <h3>{{edu.degree}}</h3>
+          <div class="institution">{{edu.institution}}</div>
+          <p>{{edu.description}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section section">
+    <div class="container">
+      <h2>Competenze Tecniche</h2>
+      <div class="skills-grid">
+        <div class="skill-card" *ngFor="let category of skillCategories">
+          <h3>{{category.name}}</h3>
+          <ul class="skill-list">
+            <li *ngFor="let skill of category.skills">{{skill}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

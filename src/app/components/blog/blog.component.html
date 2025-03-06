@@ -1,0 +1,40 @@
+<section id="blog" class="section">
+  <div class="container">
+    <div class="empty-state" *ngIf="!isLoading && blogPosts.length === 0">
+      <div class="empty-content">
+        <div class="empty-icon">📝</div>
+        <h2>Nessun articolo disponibile</h2>
+        <p>Al momento non ci sono articoli pubblicati. Torna presto per nuovi contenuti interessanti sul mondo dello sviluppo web!</p>
+        <div class="coming-soon">
+          <h3>In Arrivo</h3>
+          <ul class="upcoming-topics">
+            <li>Best Practices Angular 2025</li>
+            <li>TypeScript Tips & Tricks</li>
+            <li>Web Performance Optimization</li>
+            <li>Modern CSS Techniques</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <ng-container *ngIf="blogPosts.length > 0">
+      <div class="blog-grid">
+        <article class="blog-card" *ngFor="let post of blogPosts">
+          <div class="post-meta">
+            <span class="category">{{post.category}}</span>
+            <span class="date">{{post.date}}</span>
+          </div>
+          <h3>{{post.title}}</h3>
+          <p>{{post.excerpt}}</p>
+          <div class="post-footer">
+            <a [routerLink]="['/blog', post.id]" class="read-more">
+              Leggi l'articolo
+              <span class="arrow">→</span>
+            </a>
+            <span class="read-time">{{post.readTime}} lettura</span>
+          </div>
+        </article>
+      </div>
+    </ng-container>
+  </div>
+</section>

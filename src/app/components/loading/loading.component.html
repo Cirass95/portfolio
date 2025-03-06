@@ -1,0 +1,20 @@
+<div class="loading-screen" [class.fade-out]="isLoading">
+  <div class="content">
+    <div class="logo">
+      <span class="logo-text">&lt; MC /&gt;</span>
+      <span class="logo-dot"></span>
+    </div>
+    <div class="counter">{{ progress }}%</div>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress" [style.width.%]="progress"></div>
+      </div>
+      <div class="progress-circles">
+        <div class="circle" *ngFor="let i of [1,2,3,4,5]" 
+             [class.active]="progress >= i * 20">
+        </div>
+      </div>
+    </div>
+    <p class="loading-text">{{ loadingText }}</p>
+  </div>
+</div>

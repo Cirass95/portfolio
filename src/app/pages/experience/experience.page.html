@@ -1,0 +1,45 @@
+<app-page-header></app-page-header>
+<main class="main-content">
+  <section class="hero-section">
+    <div class="container">
+      <h1>Esperienza Professionale</h1>
+      <p class="lead">
+        Come consulente IT, ho avuto l'opportunità di lavorare su progetti enterprise significativi
+        per importanti aziende clienti in diversi settori. Ogni progetto ha rappresentato una sfida
+        unica che ha contribuito alla mia crescita professionale.
+      </p>
+    </div>
+  </section>
+  
+  <section class="experience-section section">
+    <div class="container">
+      <div class="experience-timeline">
+        <div class="experience-card" *ngFor="let exp of experiences">
+          <div class="exp-header">
+            <div class="period">{{exp.period}}</div>
+            <div class="role">{{exp.role}}</div>
+            <div class="sector">Progetto Cliente: {{exp.sector}}</div>
+          </div>
+          
+          <p class="description">{{exp.description}}</p>
+          
+          <div class="responsibilities">
+            <h3>Attività Svolte</h3>
+            <ul>
+              <li *ngFor="let resp of exp.responsibilities">{{resp}}</li>
+            </ul>
+          </div>
+
+          <div class="tech-stack">
+            <h3>Stack Tecnologico</h3>
+            <div class="tech-tags">
+              <span class="tech-tag" *ngFor="let tech of exp.technologies">
+                {{tech}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
