@@ -140,22 +140,22 @@
   }
   
   /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+  // ::-webkit-scrollbar {
+  //   width: 10px;
+  // }
   
-  ::-webkit-scrollbar-track {
-    background: var(--bg-color);
-  }
+  // ::-webkit-scrollbar-track {
+  //   background: var(--bg-color);
+  // }
   
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent-pink);
-    border-radius: 5px;
+  // ::-webkit-scrollbar-thumb {
+  //   background: var(--accent-pink);
+  //   border-radius: 5px;
   
-    &:hover {
-      background: var(--accent-purple);
-    }
-  }
+  //   &:hover {
+  //     background: var(--accent-purple);
+  //   }
+  // }
   
   /* Responsive Design */
   @media (max-width: 768px) {

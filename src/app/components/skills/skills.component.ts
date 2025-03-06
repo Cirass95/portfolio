@@ -19,16 +19,16 @@ interface Skill {
 export class SkillsComponent {
   frontendSkills: Skill[] = [
     { name: 'Angular', level: 95, color: 'var(--accent-pink)' },
+    { name: 'Ionic', level: 85, color: 'var(--accent-green)' },
     { name: 'TypeScript', level: 90, color: 'var(--accent-blue)' },
     { name: 'JavaScript', level: 90, color: 'var(--accent-purple)' },
-    { name: 'HTML/CSS', level: 85, color: 'var(--accent-orange)' },
-    { name: 'Ionic', level: 85, color: 'var(--accent-green)' }
+    { name: 'HTML/CSS', level: 85, color: 'var(--accent-orange)' }
   ];
 
   backendSkills: Skill[] = [
-    { name: 'Node.js', level: 85, color: 'var(--accent-green)' },
-    { name: 'Express', level: 80, color: 'var(--accent-blue)' },
-    { name: 'MongoDB', level: 75, color: 'var(--accent-purple)' },
+    { name: 'Node.js', level: 55, color: 'var(--accent-green)' },
+    { name: 'Express', level: 55, color: 'var(--accent-blue)' },
+    { name: 'MongoDB', level: 50, color: 'var(--accent-purple)' },
     { name: 'WordPress', level: 80, color: 'var(--accent-pink)' },
     { name: 'Git', level: 90, color: 'var(--accent-orange)' }
   ];
@@ -36,7 +36,7 @@ export class SkillsComponent {
   technologies: string[] = [
     'RxJS', 'NgRx', 'Redux', 'SASS', 'Webpack', 
     'Jest', 'Cypress', 'GraphQL', 'REST API', 
-    'CI/CD', 'AWS', 'Firebase', 'Material UI', 
+    'CI/CD', 'AWS', 'Firebase', 'Material UI', 'PrimeNG','Kendoo UI', 
     'WordPress', 'Tailwind CSS', 'Bootstrap'
   ];
 }

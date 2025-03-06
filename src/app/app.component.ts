@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ThemeService } from './core/services/theme.service';
+import { SeoService } from './core/services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -18,26 +19,20 @@ export class AppComponent implements OnInit {
   showLoading = true;
 
   constructor(
-    private meta: Meta,
-    private title: Title,
-    private themeService: ThemeService
+    private themeService: ThemeService,
+    private seoService: SeoService
   ) {
-    this.title.setTitle('Michele Cirasola | Sviluppatore Frontend & WordPress');
+
+    this.seoService.setMetaTags({
+      title: 'Michele Cirasola | Sviluppatore Frontend',
+      description: 'Sviluppatore Frontend specializzato in Angular, Ionic e WordPress. Creo siti web moderni, applicazioni mobile e soluzioni e-commerce.',
+      ogTitle: 'Michele Cirasola | Sviluppatore Frontend',
+      ogDescription: 'Sviluppatore Frontend specializzato in Angular, Ionic e WordPress. Creo siti web moderni, applicazioni mobile e soluzioni e-commerce.',
+      ogImage: 'https://michelecirasola.dev/foto_curriculum.png',
+      keywords: 'sviluppatore frontend, angular, ionic, wordpress, sviluppo web, applicazioni mobile, siti web, italia, milano',
+      
+    });
     
-    this.meta.addTags([
-      { name: 'description', content: 'Sviluppatore Frontend specializzato in Angular, Ionic e WordPress. Creo siti web moderni, applicazioni mobile e soluzioni e-commerce per il mercato italiano.' },
-      { name: 'keywords', content: 'sviluppatore frontend, angular, ionic, wordpress, sviluppo web, applicazioni mobile, siti web, italia, milano' },
-      { name: 'author', content: 'Michele Cirasola' },
-      { name: 'robots', content: 'index, follow' },
-      { property: 'og:title', content: 'Michele Cirasola | Sviluppatore Frontend & WordPress' },
-      { property: 'og:description', content: 'Sviluppatore Frontend specializzato in Angular, Ionic e WordPress. Creo siti web moderni, applicazioni mobile e soluzioni e-commerce per il mercato italiano.' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:locale', content: 'it_IT' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Michele Cirasola | Sviluppatore Frontend & WordPress' },
-      { name: 'twitter:description', content: 'Sviluppatore Frontend specializzato in Angular, Ionic e WordPress. Creo siti web moderni, applicazioni mobile e soluzioni e-commerce.' },
-      { name: 'format-detection', content: 'telephone=no' }
-    ]);
   }
 
   ngOnInit() {
@@ -45,6 +40,6 @@ export class AppComponent implements OnInit {
     
     setTimeout(() => {
       this.showLoading = false;
-    }, 5000);
+    }, 3000);
   }
 }

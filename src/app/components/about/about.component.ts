@@ -12,7 +12,7 @@ import { ScrollColorDirective } from '../../shared/directives/scroll-color.direc
 export class AboutComponent implements OnInit {
   highlights = [
     { value: 0, target: 5, suffix: '+', text: 'Anni di Esperienza' },
-    { value: 0, target: 50, suffix: '+', text: 'Progetti Completati' },
+    { value: 0, target: 20, suffix: '+', text: 'Progetti Completati' },
     { value: 0, target: 20, suffix: '+', text: 'Clienti Soddisfatti' }
   ];
 

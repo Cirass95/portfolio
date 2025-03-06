@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="60" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff2975" />
+      <stop offset="100%" style="stop-color:#9f00ff" />
+    </linearGradient>
+  </defs>
+  <g fill="url(#gradient)" font-family="Inter, sans-serif" font-weight="800">
+    <text x="10" y="45" font-size="32">&lt;</text>
+    <text x="55" y="45" font-size="32">MC</text>
+    <text x="120" y="45" font-size="32">/</text>
+    <text x="140" y="45" font-size="32">&gt;</text>
+  </g>
+</svg>
