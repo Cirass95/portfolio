@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://michelecirasola.it/</loc>
+    <loc>https://michelecirasola.dev/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://michelecirasola.it/chi-sono</loc>
+    <loc>https://michelecirasola.dev/chi-sono</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://michelecirasola.it/esperienza</loc>
+    <loc>https://michelecirasola.dev/esperienza</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://michelecirasola.dev/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
