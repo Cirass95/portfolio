@@ -24,7 +24,7 @@ export class ExperiencePage {
 
     {
       period: '04/2025 - Presente',
-      role: 'Web Developer Tech Lead',
+      role: 'Web Developer',
       sector: 'Settore Metallurgico',
       description:
         'All\'interno di un\'azienda leader nell\'automazione di impianti siderurgici ho progettato e sviluppato una nuova sezione dedicata alla simulazione dei processi produttivi. Ho contribuito alla definizione dei requisiti, alla strutturazione dell\'architettura front-end e alla realizzazione delle funzionalità chiave, collaborando in modo continuo con analisti e team backend.',
