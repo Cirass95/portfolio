@@ -65,9 +65,9 @@ export class AboutPage {
 
   constructor(private meta: Meta, private title: Title) {
     this.title.setTitle('Chi Sono | Michele Cirasola - Sviluppatore Frontend');
-    this.meta.updateTag({ 
-      name: 'description', 
-      content: 'Scopri il mio percorso formativo e le competenze tecniche nel campo dello sviluppo frontend e mobile. Specializzato in Angular, Ionic e sviluppo web moderno.' 
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Sviluppatore Frontend con laurea in Economia e Informatica. Competenze in Angular, Ionic, TypeScript, RxJS e NgRx per progetti web e mobile enterprise.'
     });
   }
 }

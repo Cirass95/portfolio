@@ -14,9 +14,9 @@ import { BlogListComponent } from './components/blog-list/blog-list.component';
 export class BlogPage {
   constructor(private meta: Meta, private title: Title) {
     this.title.setTitle('Blog | Michele Cirasola - Sviluppatore Frontend');
-    this.meta.updateTag({ 
-      name: 'description', 
-      content: 'Blog tecnico con articoli e tutorial su Angular, TypeScript, e sviluppo web moderno. Approfondimenti e best practices per sviluppatori frontend.' 
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Blog tecnico su Angular, Ionic, TypeScript e sviluppo web enterprise. Tutorial, best practices e approfondimenti per sviluppatori frontend.'
     });
   }
 }

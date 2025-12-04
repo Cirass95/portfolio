@@ -24,20 +24,20 @@ export class AppComponent implements OnInit {
   ) {
 
     this.seoService.setMetaTags({
-      title: 'Michele Cirasola | Sviluppatore Frontend',
-      description: 'Sviluppatore Frontend specializzato in Angular, Ionic e WordPress. Creo siti web moderni, applicazioni mobile e soluzioni e-commerce.',
-      ogTitle: 'Michele Cirasola | Sviluppatore Frontend',
-      ogDescription: 'Sviluppatore Frontend specializzato in Angular, Ionic e WordPress. Creo siti web moderni, applicazioni mobile e soluzioni e-commerce.',
+      title: 'Michele Cirasola | Sviluppatore Frontend Angular, Ionic & WordPress',
+      description: 'Sviluppatore Frontend con 6+ anni di esperienza in progetti enterprise. Specializzato in Angular, Ionic, TypeScript e WordPress per applicazioni web e mobile nei settori bancario, PA e industriale.',
+      ogTitle: 'Michele Cirasola | Sviluppatore Frontend Angular, Ionic & WordPress',
+      ogDescription: 'Sviluppatore Frontend con 6+ anni di esperienza in progetti enterprise. Specializzato in Angular, Ionic, TypeScript e WordPress per applicazioni web e mobile.',
       ogImage: 'https://michelecirasola.dev/foto_curriculum.png',
-      keywords: 'sviluppatore frontend, angular, ionic, wordpress, sviluppo web, applicazioni mobile, siti web, italia, milano',
-      
+      keywords: 'sviluppatore frontend, angular developer, ionic framework, typescript, rxjs, ngrx, wordpress, sviluppo web enterprise, applicazioni mobile ibride, consulente IT, progetti bancari, pubblica amministrazione, pescara, abruzzo, tech lead',
+
     });
-    
+
   }
 
   ngOnInit() {
     this.themeService.initializeTheme();
-    
+
     setTimeout(() => {
       this.showLoading = false;
     }, 3000);

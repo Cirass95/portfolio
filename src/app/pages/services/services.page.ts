@@ -127,9 +127,9 @@ export class ServicesPage {
 
   constructor(private meta: Meta, private title: Title) {
     this.title.setTitle('Servizi | Michele Cirasola - Sviluppatore Frontend');
-    this.meta.updateTag({ 
-      name: 'description', 
-      content: 'Servizi professionali di sviluppo web: dalla consulenza tecnica alla realizzazione di applicazioni web moderne. Metodologia agile e focus sulla qualità.' 
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Servizi di sviluppo web e mobile enterprise: consulenza tecnica, sviluppo applicazioni Angular e Ionic, architettura frontend. Metodologia agile e focus sulla qualità.'
     });
   }
 }
